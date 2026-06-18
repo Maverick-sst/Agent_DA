@@ -5,7 +5,7 @@
 html, body {
   background-color: #faf9f5;
   color: #141413;
-  font-family: "StyreneB", Inter, sans-serif;
+  font-family: "StyreneB", Inter,system-ui, sans-serif;
 }
 
 ::selection {
@@ -17,6 +17,9 @@ html, body {
 ::-webkit-scrollbar-track { background: #faf9f5; }
 ::-webkit-scrollbar-thumb { background: #e6dfd8; border-radius: 3px; }
 ::-webkit-scrollbar-thumb:hover { background: #cc785c; }
+::-webkit-scrollbar-corner {
+  background: #faf9f5;
+}
 
 @keyframes pulse-slow {
   0%, 100% { opacity: 1; }
@@ -27,7 +30,7 @@ html, body {
 .js-plotly-plot .plotly .modebar { background-color: transparent !important; }
 .js-plotly-plot .plotly .main-svg { background: transparent !important; }
 
-/* Scroll-reveal animations */
+/* Scroll-reveal animations used across landing page sections */
 .reveal {
   opacity: 0;
   transition: all 0.8s cubic-bezier(0.16, 1, 0.3, 1);
